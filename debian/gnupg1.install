@@ -1,0 +1,8 @@
+#!/usr/bin/dh-exec
+build-deb/g10/gpg => usr/bin/gpg1
+build-deb/keyserver/gpgkeys_curl usr/lib/gnupg1
+build-deb/keyserver/gpgkeys_finger usr/lib/gnupg1
+build-deb/keyserver/gpgkeys_hkp usr/lib/gnupg1
+build-deb/keyserver/gpgkeys_ldap usr/lib/gnupg1
+build-deb/keyserver/gpgkeys_mailto usr/lib/gnupg1
+usr/share/gnupg1/options.skel

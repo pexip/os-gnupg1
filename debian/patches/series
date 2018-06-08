@@ -1,0 +1,8 @@
+0001-avoid-looking-for-git-info-during-autoreconf.patch
+0002-Update-Danish-translation.patch
+0003-change-package-name-to-gnupg1.patch
+0004-doc-Enable-SOURCE_DATE_EPOCH-for-reproducibility.patch
+0005-spelling-correct-achived-to-achieved.patch
+0006-gpg-Change-default-digest-algorithm-to-SHA256.patch
+0007-Updated-Spanish-translation-from-Venturi.patch
+0008-gpg-Sanitize-diagnostic-with-the-original-file-name.patch

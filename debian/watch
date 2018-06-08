@@ -1,0 +1,6 @@
+version=4
+
+opts=pgpsigurlmangle=s/$/.sig/ \
+ https://gnupg.org/ftp/gcrypt/gnupg/ \
+ gnupg-(1\.[\d\.]+)@ARCHIVE_EXT@ \
+ debian uupdate

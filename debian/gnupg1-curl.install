@@ -1,0 +1,1 @@
+build-deb-curl/keyserver/gpgkeys_hkp build-deb-curl/keyserver/gpgkeys_curl usr/lib/gnupg1

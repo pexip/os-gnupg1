@@ -1,0 +1,5 @@
+po/*.gmo
+po/stamp-po
+po/gnupg1.pot
+build-deb-curl/
+build-udeb/

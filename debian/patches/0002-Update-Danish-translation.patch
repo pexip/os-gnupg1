@@ -1,0 +1,62 @@
+From: Joe Hansen <joedalton2@yahoo.dk>
+Date: Thu, 28 May 2015 01:50:54 -0400
+Subject: Update-Danish-translation
+
+---
+ po/da.po | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+diff --git a/po/da.po b/po/da.po
+index b35c8a6..f7474ca 100644
+--- a/po/da.po
++++ b/po/da.po
+@@ -2,7 +2,7 @@
+ # Copyright (C) 2012 Free Software Foundation, Inc.
+ # Birger Langkjer, <birger.langkjer@image.dk>, 2000.
+ # Kenneth Christiansen, kenneth@ripen.dk, 2000.
+-# Joe Hansen, <joedalton2@yahoo.dk>, 2012.
++# Joe Hansen, <joedalton2@yahoo.dk>, 2012, 2014.
+ #
+ # deadlock -> baglås
+ # ownertrust -> ejertroværdighed (pålidelighed, tillid)
+@@ -2309,7 +2309,7 @@ msgstr "reparer skade fra pks-nøgleserveren under import"
+ #, fuzzy
+ #| msgid "do not update the trustdb after import"
+ msgid "do not clear the ownertrust values during import"
+-msgstr "opdater ikke trustdb efter import"
++msgstr "ryd ikke ejerskabsværdierne under import"
+ 
+ #: g10/import.c:107
+ msgid "do not update the trustdb after import"
+@@ -2466,11 +2466,11 @@ msgstr "nøgle %s: ingen bruger-id\n"
+ #, fuzzy, c-format
+ #| msgid "skipped \"%s\": %s\n"
+ msgid "key %s: %s\n"
+-msgstr "udelod »%s«: %s\n"
++msgstr "nøgle %s: %s\n"
+ 
+ #: g10/import.c:820 g10/import.c:1212
+ msgid "rejected by import filter"
+-msgstr ""
++msgstr "afvist af importfilter"
+ 
+ #: g10/import.c:849
+ #, c-format
+@@ -2596,7 +2596,7 @@ msgstr "nøgle %s: »%s« ikke ændret\n"
+ #, fuzzy, c-format
+ #| msgid "secret key \"%s\" not found: %s\n"
+ msgid "secret key %s: %s\n"
+-msgstr "hemmelig nøgle »%s« blev ikke fundet: %s\n"
++msgstr "hemmelig nøgle %s: %s\n"
+ 
+ #: g10/import.c:1231 g10/import.c:1254
+ msgid "importing secret keys not allowed\n"
+@@ -4784,7 +4784,7 @@ msgstr "ukendt"
+ #: g10/mainproc.c:1981
+ #, c-format
+ msgid "WARNING: not a detached signature; file '%s' was NOT verified!\n"
+-msgstr ""
++msgstr "ADVARSEL: Ikke en frakoblet underskrift; filen »%s« blev IKKE verificeret!\n"
+ 
+ #: g10/mainproc.c:2005
+ #, c-format
