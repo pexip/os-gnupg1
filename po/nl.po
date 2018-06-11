@@ -24,14 +24,14 @@
 # When output to an ASCII terminal, the single quotation marks are
 # transliterated to apostrophes, and the double quotation marks are
 # transliterated to 0x22.
-# Frans Spiesschaert <Frans.Spiesschaert@yucom.be>, 2014.
+# Frans Spiesschaert <Frans.Spiesschaert@yucom.be>, 2014, 2017.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnupg 1.4.6\n"
+"Project-Id-Version: gnupg 1.4.22\n"
 "Report-Msgid-Bugs-To: translations@gnupg.org\n"
-"POT-Creation-Date: 2016-08-17 15:21+0200\n"
-"PO-Revision-Date: 2014-11-24 12:23+0100\n"
+"POT-Creation-Date: 2018-06-11 10:48+0200\n"
+"PO-Revision-Date: 2017-08-16 22:32+0200\n"
 "Last-Translator: Frans Spiesschaert <Frans.Spiesschaert@yucom.be>\n"
 "Language-Team: Debian Dutch l10n Team <debian-l10n-dutch@lists.debian.org>\n"
 "Language: nl\n"
@@ -39,6 +39,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
 #: cipher/primegen.c:119
 #, c-format
@@ -3609,7 +3610,7 @@ msgstr "(gevoelig)"
 msgid "created: %s"
 msgstr "aangemaakt: %s"
 
-#: g10/keyedit.c:2746 g10/keylist.c:786 g10/keylist.c:880 g10/mainproc.c:999
+#: g10/keyedit.c:2746 g10/keylist.c:786 g10/keylist.c:880 g10/mainproc.c:1003
 #, c-format
 msgid "revoked: %s"
 msgstr "ingetrokken: %s"
@@ -3621,7 +3622,7 @@ msgstr "verlopen: %s"
 
 #: g10/keyedit.c:2750 g10/keyedit.c:2801 g10/keyedit.c:2862 g10/keyedit.c:2877
 #: g10/keylist.c:196 g10/keylist.c:763 g10/keylist.c:798 g10/keylist.c:892
-#: g10/keylist.c:913 g10/keyserver.c:532 g10/mainproc.c:1005
+#: g10/keylist.c:913 g10/keyserver.c:532 g10/mainproc.c:1009
 #, c-format
 msgid "expires: %s"
 msgstr "vervaldatum: %s"
@@ -3658,12 +3659,12 @@ msgstr ""
 "noodzakelijk correct is, tenzij u de applicatie herstart.\n"
 
 #: g10/keyedit.c:2894 g10/keyedit.c:3287 g10/keyserver.c:536
-#: g10/mainproc.c:1846 g10/trustdb.c:1243 g10/trustdb.c:1763
+#: g10/mainproc.c:1850 g10/trustdb.c:1243 g10/trustdb.c:1763
 msgid "revoked"
 msgstr "ingetrokken"
 
 #: g10/keyedit.c:2896 g10/keyedit.c:3289 g10/keyserver.c:540
-#: g10/mainproc.c:1848 g10/trustdb.c:552 g10/trustdb.c:1765
+#: g10/mainproc.c:1852 g10/trustdb.c:552 g10/trustdb.c:1765
 msgid "expired"
 msgstr "verlopen"
 
@@ -3679,13 +3680,11 @@ msgstr ""
 
 #: g10/keyedit.c:3007
 msgid "WARNING: Your encryption subkey expires soon.\n"
-msgstr ""
+msgstr "WAARSCHUWING: uw encryptie-subsleutel vervalt weldra.\n"
 
 #: g10/keyedit.c:3008
-#, fuzzy
-#| msgid "You can't change the expiration date of a v3 key\n"
 msgid "You may want to change its expiration date too.\n"
-msgstr "U kunt de vervaldatum van een v3-sleutel niet veranderen\n"
+msgstr "Misschien wilt u ook zijn vervaldatum wijzigen.\n"
 
 #: g10/keyedit.c:3069
 msgid ""
@@ -4831,134 +4830,134 @@ msgid "NOTE: sender requested \"for-your-eyes-only\"\n"
 msgstr ""
 "NOOT: afzender heeft het volgende verzocht: \"alleen-voor-u-persoonlijk\"\n"
 
-#: g10/mainproc.c:641
+#: g10/mainproc.c:643
 #, c-format
 msgid "original file name='%.*s'\n"
 msgstr "originele bestandsnaam='%.*s'\n"
 
-#: g10/mainproc.c:726
+#: g10/mainproc.c:730
 msgid "WARNING: multiple plaintexts seen\n"
 msgstr "WAARSCHUWING: er werd meerdere keren een klare tekst gezien\n"
 
-#: g10/mainproc.c:852
+#: g10/mainproc.c:856
 msgid "standalone revocation - use \"gpg --import\" to apply\n"
 msgstr "autonome intrekking - gebruik \"gpg --import\" om ze toe te passen\n"
 
-#: g10/mainproc.c:1200
+#: g10/mainproc.c:1204
 msgid "no signature found\n"
 msgstr "geen ondertekening gevonden\n"
 
-#: g10/mainproc.c:1471
+#: g10/mainproc.c:1475
 msgid "signature verification suppressed\n"
 msgstr "controle van de ondertekening onderdrukt\n"
 
-#: g10/mainproc.c:1580
+#: g10/mainproc.c:1584
 msgid "can't handle this ambiguous signature data\n"
 msgstr "kan deze ambigue ondertekeningsgegevens niet verwerken\n"
 
-#: g10/mainproc.c:1591
+#: g10/mainproc.c:1595
 #, c-format
 msgid "Signature made %s\n"
 msgstr "Ondertekening gemaakt op %s\n"
 
-#: g10/mainproc.c:1592
+#: g10/mainproc.c:1596
 #, c-format
 msgid "               using %s key %s\n"
 msgstr "               met %s sleutel %s\n"
 
-#: g10/mainproc.c:1596
+#: g10/mainproc.c:1600
 #, c-format
 msgid "Signature made %s using %s key ID %s\n"
 msgstr "Ondertekening gemaakt op %s met %s sleutel-ID %s\n"
 
-#: g10/mainproc.c:1616
+#: g10/mainproc.c:1620
 msgid "Key available at: "
 msgstr "Sleutel beschikbaar op: "
 
-#: g10/mainproc.c:1749 g10/mainproc.c:1797
+#: g10/mainproc.c:1753 g10/mainproc.c:1801
 #, c-format
 msgid "BAD signature from \"%s\""
 msgstr "SLECHTE handtekening van \"%s\""
 
-#: g10/mainproc.c:1751 g10/mainproc.c:1799
+#: g10/mainproc.c:1755 g10/mainproc.c:1803
 #, c-format
 msgid "Expired signature from \"%s\""
 msgstr "Vervallen handtekening van \"%s\""
 
-#: g10/mainproc.c:1753 g10/mainproc.c:1801
+#: g10/mainproc.c:1757 g10/mainproc.c:1805
 #, c-format
 msgid "Good signature from \"%s\""
 msgstr "Goede handtekening van \"%s\""
 
-#: g10/mainproc.c:1805
+#: g10/mainproc.c:1809
 msgid "[uncertain]"
 msgstr "[onzeker]"
 
-#: g10/mainproc.c:1839
+#: g10/mainproc.c:1843
 #, c-format
 msgid "                aka \"%s\""
 msgstr "                ook bekend als \"%s\""
 
-#: g10/mainproc.c:1937
+#: g10/mainproc.c:1941
 #, c-format
 msgid "Signature expired %s\n"
 msgstr "Ondertekening vervallen op %s\n"
 
-#: g10/mainproc.c:1942
+#: g10/mainproc.c:1946
 #, c-format
 msgid "Signature expires %s\n"
 msgstr "Ondertekening verloopt op %s\n"
 
-#: g10/mainproc.c:1945
+#: g10/mainproc.c:1949
 #, c-format
 msgid "%s signature, digest algorithm %s\n"
 msgstr "%s handtekening, hashalgoritme %s\n"
 
-#: g10/mainproc.c:1946
+#: g10/mainproc.c:1950
 msgid "binary"
 msgstr "binair"
 
-#: g10/mainproc.c:1947
+#: g10/mainproc.c:1951
 msgid "textmode"
 msgstr "tekstmodus"
 
-#: g10/mainproc.c:1947 g10/trustdb.c:551
+#: g10/mainproc.c:1951 g10/trustdb.c:551
 msgid "unknown"
 msgstr "onbekend"
 
-#: g10/mainproc.c:1981
+#: g10/mainproc.c:1985
 #, c-format
 msgid "WARNING: not a detached signature; file '%s' was NOT verified!\n"
 msgstr ""
 "WAARSCHUWING: geen ontkoppelde handtekening;\n"
 "              bestand '%s' werd NIET geverifieerd!\n"
 
-#: g10/mainproc.c:2005
+#: g10/mainproc.c:2009
 #, c-format
 msgid "Can't check signature: %s\n"
 msgstr "Kan ondertekening niet controleren: %s\n"
 
-#: g10/mainproc.c:2074 g10/mainproc.c:2090 g10/mainproc.c:2176
+#: g10/mainproc.c:2078 g10/mainproc.c:2094 g10/mainproc.c:2180
 msgid "not a detached signature\n"
 msgstr "geen ontkoppelde ondertekening\n"
 
-#: g10/mainproc.c:2117
+#: g10/mainproc.c:2121
 msgid ""
 "WARNING: multiple signatures detected.  Only the first will be checked.\n"
 msgstr ""
 "WAARSCHUWING: meerdere ondertekeningen gevonden.\n"
 "              Alleen de eerste zal gecontroleerd worden.\n"
 
-#: g10/mainproc.c:2125
+#: g10/mainproc.c:2129
 #, c-format
 msgid "standalone signature of class 0x%02x\n"
 msgstr "alleenstaande ondertekening van klasse 0x%02x\n"
 
-#: g10/mainproc.c:2182
+#: g10/mainproc.c:2186
 msgid "old style (PGP 2.x) signature\n"
 msgstr "ondertekening oude stijl (PGP 2.x)\n"
 
-#: g10/mainproc.c:2192
+#: g10/mainproc.c:2196
 msgid "invalid root packet detected in proc_tree()\n"
 msgstr "ongeldig stampakket gevonden in proc_tree()\n"
 
@@ -5062,10 +5061,9 @@ msgid "unknown option `%s'\n"
 msgstr "onbekende optie `%s'\n"
 
 #: g10/misc.c:1331
-#, fuzzy, c-format
-#| msgid "Unknown signature type `%s'\n"
+#, c-format
 msgid "Unknown weak digest '%s'\n"
-msgstr "Onbekend ondertekeningstype ‘%s’\n"
+msgstr "Onbekende zwakke hash '%s'\n"
 
 #: g10/openfile.c:88
 #, c-format
@@ -5841,10 +5839,10 @@ msgid "NOTE: signature key %s expired %s\n"
 msgstr "NOOT: ondertekeningssleutel %s verviel op %s\n"
 
 #: g10/sig-check.c:254
-#, fuzzy, c-format
-#| msgid "%s signature, digest algorithm %s\n"
+#, c-format
 msgid "Note: signatures using the %s algorithm are rejected\n"
-msgstr "%s handtekening, hashalgoritme %s\n"
+msgstr ""
+"Merk op: handtekeningen die het algoritme %s gebruiken, worden verworpen\n"
 
 #: g10/sig-check.c:345
 #, c-format
@@ -6277,7 +6275,7 @@ msgstr "uiterst"
 msgid "no need for a trustdb check\n"
 msgstr "een controle van de betrouwbaarheidsdatabank (trustdb) is niet nodig\n"
 
-#: g10/trustdb.c:603 g10/trustdb.c:2513
+#: g10/trustdb.c:603 g10/trustdb.c:2519
 #, c-format
 msgid "next trustdb check due at %s\n"
 msgstr "volgende controle van de betrouwbaarheidsdatabank (trustdb) is op %s\n"
@@ -6309,33 +6307,33 @@ msgstr "gelieve het commando --check-trustdb uit te voeren\n"
 msgid "checking the trustdb\n"
 msgstr "de betrouwbaarheidsdatabank (trustdb) wordt gecontroleerd\n"
 
-#: g10/trustdb.c:2256
+#: g10/trustdb.c:2262
 #, c-format
 msgid "%d keys processed (%d validity counts cleared)\n"
 msgstr "%d sleutels werden verwerkt (%d geldigheidstellers op nul gezet)\n"
 
-#: g10/trustdb.c:2321
+#: g10/trustdb.c:2327
 msgid "no ultimately trusted keys found\n"
 msgstr "geen uiterst betrouwbare sleutels gevonden\n"
 
-#: g10/trustdb.c:2335
+#: g10/trustdb.c:2341
 #, c-format
 msgid "public key of ultimately trusted key %s not found\n"
 msgstr "publieke sleutel van uiterst betrouwbare sleutel %s niet gevonden\n"
 
-#: g10/trustdb.c:2358
+#: g10/trustdb.c:2364
 #, c-format
 msgid "%d marginal(s) needed, %d complete(s) needed, %s trust model\n"
 msgstr "%d marginale nodig, %d volledige nodig, betrouwbaarheidsmodel %s\n"
 
-#: g10/trustdb.c:2444
+#: g10/trustdb.c:2450
 #, c-format
 msgid ""
 "depth: %d  valid: %3d  signed: %3d  trust: %d-, %dq, %dn, %dm, %df, %du\n"
 msgstr ""
 "diepte: %d  geldig: %3d  ondert.: %3d  vertr.: %d-, %dq, %dn, %dm, %df, %du\n"
 
-#: g10/trustdb.c:2519
+#: g10/trustdb.c:2525
 #, c-format
 msgid "unable to update trustdb version record: write failed: %s\n"
 msgstr ""

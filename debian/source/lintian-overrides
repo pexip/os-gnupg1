@@ -1,5 +1,2 @@
-gnupg1 source: binaries-have-file-conflict gnupg1 gnupg1-curl usr/lib/gnupg1/gpgkeys_curl
-gnupg1 source: binaries-have-file-conflict gnupg1 gnupg1-curl usr/lib/gnupg1/gpgkeys_hkp
 # doc merely references / cites IETF RFC: 
 gnupg1 source: license-problem-non-free-RFC doc/OpenPGP
-gnupg1 source: license-problem-non-free-RFC debian/copyright

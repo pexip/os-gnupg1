@@ -9,14 +9,14 @@ We're moving to calling this gnupg1; this change should affect libexec
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/configure.ac b/configure.ac
-index 0179f1d..572dc14 100644
+index 6222be6..53f2ca6 100644
 --- a/configure.ac
 +++ b/configure.ac
 @@ -39,7 +39,7 @@ m4_define([mym4_betastring],[])
  m4_define([mym4_isgit],m4_if(mym4_betastring,[],[no],[yes]))
  m4_define([mym4_full_version],[mym4_version[]mym4_betastring])
  
--AC_INIT([gnupg],[mym4_full_version], [http://bugs.gnupg.org])
+-AC_INIT([gnupg],[mym4_full_version], [https://bugs.gnupg.org])
 +AC_INIT([gnupg1],[mym4_full_version], [https://bugs.gnupg.org])
  
  
