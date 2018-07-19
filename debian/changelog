@@ -1,3 +1,9 @@
+gnupg1 (1.4.21-4+deb9u1pexip1) pexip; urgency=medium
+
+  * Prepare Pexip packaging
+
+ -- John-Mark Bell <jmb@pexip.com>  Thu, 19 Jul 2018 13:56:49 +0000
+
 gnupg1 (1.4.21-4+deb9u1) stretch-security; urgency=high
 
   * Non-maintainer upload by the Security Team.
