@@ -27,7 +27,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnupg 1.4.0\n"
 "Report-Msgid-Bugs-To: translations@gnupg.org\n"
-"POT-Creation-Date: 2016-08-17 15:21+0200\n"
+"POT-Creation-Date: 2018-06-11 10:48+0200\n"
 "PO-Revision-Date: 2012-08-24 17:20+0200\n"
 "Last-Translator: Jordi Mallach <jordi@gnu.org>\n"
 "Language-Team: Catalan <ca@dodds.net>\n"
@@ -3684,7 +3684,7 @@ msgstr " (sensible)"
 msgid "created: %s"
 msgstr "no s'ha pogut creat %s: %s\n"
 
-#: g10/keyedit.c:2746 g10/keylist.c:786 g10/keylist.c:880 g10/mainproc.c:999
+#: g10/keyedit.c:2746 g10/keylist.c:786 g10/keylist.c:880 g10/mainproc.c:1003
 #, fuzzy, c-format
 msgid "revoked: %s"
 msgstr "[revocada]"
@@ -3696,7 +3696,7 @@ msgstr " [caduca: %s]"
 
 #: g10/keyedit.c:2750 g10/keyedit.c:2801 g10/keyedit.c:2862 g10/keyedit.c:2877
 #: g10/keylist.c:196 g10/keylist.c:763 g10/keylist.c:798 g10/keylist.c:892
-#: g10/keylist.c:913 g10/keyserver.c:532 g10/mainproc.c:1005
+#: g10/keylist.c:913 g10/keyserver.c:532 g10/mainproc.c:1009
 #, fuzzy, c-format
 msgid "expires: %s"
 msgstr " [caduca: %s]"
@@ -3733,13 +3733,13 @@ msgstr ""
 "correcta a no ser que torneu a executar el programa.\n"
 
 #: g10/keyedit.c:2894 g10/keyedit.c:3287 g10/keyserver.c:536
-#: g10/mainproc.c:1846 g10/trustdb.c:1243 g10/trustdb.c:1763
+#: g10/mainproc.c:1850 g10/trustdb.c:1243 g10/trustdb.c:1763
 #, fuzzy
 msgid "revoked"
 msgstr "[revocada]"
 
 #: g10/keyedit.c:2896 g10/keyedit.c:3289 g10/keyserver.c:540
-#: g10/mainproc.c:1848 g10/trustdb.c:552 g10/trustdb.c:1765
+#: g10/mainproc.c:1852 g10/trustdb.c:552 g10/trustdb.c:1765
 #, fuzzy
 msgid "expired"
 msgstr "expire"
@@ -4925,134 +4925,134 @@ msgstr "ha fallat el desxifratge: %s\n"
 msgid "NOTE: sender requested \"for-your-eyes-only\"\n"
 msgstr "NOTA: el remitent ha sol·licitat \"alt secret\"\n"
 
-#: g10/mainproc.c:641
+#: g10/mainproc.c:643
 #, c-format
 msgid "original file name='%.*s'\n"
 msgstr "nom del fitxer original='%.*s'\n"
 
-#: g10/mainproc.c:726
+#: g10/mainproc.c:730
 msgid "WARNING: multiple plaintexts seen\n"
 msgstr ""
 
-#: g10/mainproc.c:852
+#: g10/mainproc.c:856
 msgid "standalone revocation - use \"gpg --import\" to apply\n"
 msgstr "revocació autònoma: useu \"gpg --import\" per a aplicar-la\n"
 
-#: g10/mainproc.c:1200
+#: g10/mainproc.c:1204
 #, fuzzy
 msgid "no signature found\n"
 msgstr "Signatura correcta de \""
 
-#: g10/mainproc.c:1471
+#: g10/mainproc.c:1475
 msgid "signature verification suppressed\n"
 msgstr "s'ha eliminat la verificació de signatura\n"
 
-#: g10/mainproc.c:1580
+#: g10/mainproc.c:1584
 #, fuzzy
 msgid "can't handle this ambiguous signature data\n"
 msgstr "no es poden tractar aquestes signatures múltiples\n"
 
-#: g10/mainproc.c:1591
+#: g10/mainproc.c:1595
 #, fuzzy, c-format
 msgid "Signature made %s\n"
 msgstr "Aquesta signatura va caducar el %s\n"
 
-#: g10/mainproc.c:1592
+#: g10/mainproc.c:1596
 #, fuzzy, c-format
 msgid "               using %s key %s\n"
 msgstr "              alias \""
 
 # «%.*s» no serà una data?  Caldrà «el» al davant.  ivb
-#: g10/mainproc.c:1596
+#: g10/mainproc.c:1600
 #, fuzzy, c-format
 msgid "Signature made %s using %s key ID %s\n"
 msgstr "Signatura creada el %.*s usant una clau %s ID %08lX\n"
 
-#: g10/mainproc.c:1616
+#: g10/mainproc.c:1620
 msgid "Key available at: "
 msgstr "La clau és disponible en: "
 
-#: g10/mainproc.c:1749 g10/mainproc.c:1797
+#: g10/mainproc.c:1753 g10/mainproc.c:1801
 #, fuzzy, c-format
 msgid "BAD signature from \"%s\""
 msgstr "Signatura INCORRECTA de \""
 
-#: g10/mainproc.c:1751 g10/mainproc.c:1799
+#: g10/mainproc.c:1755 g10/mainproc.c:1803
 #, fuzzy, c-format
 msgid "Expired signature from \"%s\""
 msgstr "Signatura caducada de \""
 
-#: g10/mainproc.c:1753 g10/mainproc.c:1801
+#: g10/mainproc.c:1757 g10/mainproc.c:1805
 #, fuzzy, c-format
 msgid "Good signature from \"%s\""
 msgstr "Signatura correcta de \""
 
-#: g10/mainproc.c:1805
+#: g10/mainproc.c:1809
 msgid "[uncertain]"
 msgstr "[incert]"
 
-#: g10/mainproc.c:1839
+#: g10/mainproc.c:1843
 #, fuzzy, c-format
 msgid "                aka \"%s\""
 msgstr "              alias \""
 
-#: g10/mainproc.c:1937
+#: g10/mainproc.c:1941
 #, c-format
 msgid "Signature expired %s\n"
 msgstr "Aquesta signatura va caducar el %s\n"
 
-#: g10/mainproc.c:1942
+#: g10/mainproc.c:1946
 #, c-format
 msgid "Signature expires %s\n"
 msgstr "Aquesta signatura caduca el %s\n"
 
-#: g10/mainproc.c:1945
+#: g10/mainproc.c:1949
 #, c-format
 msgid "%s signature, digest algorithm %s\n"
 msgstr "signatura %s, algorisme de resum %s\n"
 
-#: g10/mainproc.c:1946
+#: g10/mainproc.c:1950
 msgid "binary"
 msgstr "binari"
 
-#: g10/mainproc.c:1947
+#: g10/mainproc.c:1951
 msgid "textmode"
 msgstr "mode text"
 
-#: g10/mainproc.c:1947 g10/trustdb.c:551
+#: g10/mainproc.c:1951 g10/trustdb.c:551
 msgid "unknown"
 msgstr "desconeguda"
 
-#: g10/mainproc.c:1981
+#: g10/mainproc.c:1985
 #, c-format
 msgid "WARNING: not a detached signature; file '%s' was NOT verified!\n"
 msgstr ""
 
-#: g10/mainproc.c:2005
+#: g10/mainproc.c:2009
 #, c-format
 msgid "Can't check signature: %s\n"
 msgstr "No s'ha pogut comprovar la signatura: %s\n"
 
-#: g10/mainproc.c:2074 g10/mainproc.c:2090 g10/mainproc.c:2176
+#: g10/mainproc.c:2078 g10/mainproc.c:2094 g10/mainproc.c:2180
 msgid "not a detached signature\n"
 msgstr "no és una signatura separada\n"
 
-#: g10/mainproc.c:2117
+#: g10/mainproc.c:2121
 msgid ""
 "WARNING: multiple signatures detected.  Only the first will be checked.\n"
 msgstr ""
 "AVÍS: s'han detectat múltiples signatures. Només es comprovarà la primera.\n"
 
-#: g10/mainproc.c:2125
+#: g10/mainproc.c:2129
 #, c-format
 msgid "standalone signature of class 0x%02x\n"
 msgstr "signatura autònoma de classe 0x%02x\n"
 
-#: g10/mainproc.c:2182
+#: g10/mainproc.c:2186
 msgid "old style (PGP 2.x) signature\n"
 msgstr "signatura de l'estil antic (PGP 2.x)\n"
 
-#: g10/mainproc.c:2192
+#: g10/mainproc.c:2196
 msgid "invalid root packet detected in proc_tree()\n"
 msgstr "s'ha detectat un paquet arrel invàlid en proc_tree()\n"
 
@@ -6383,7 +6383,7 @@ msgstr ""
 "no és necessària una comprovació de la base de dades de confiança\n"
 "\n"
 
-#: g10/trustdb.c:603 g10/trustdb.c:2513
+#: g10/trustdb.c:603 g10/trustdb.c:2519
 #, c-format
 msgid "next trustdb check due at %s\n"
 msgstr "la pròxima comprovació de la base de dades de confiança serà el %s\n"
@@ -6415,33 +6415,33 @@ msgstr "si us plau, feu un --check-trustdb\n"
 msgid "checking the trustdb\n"
 msgstr "s'està comprovant la base de dades de confiança\n"
 
-#: g10/trustdb.c:2256
+#: g10/trustdb.c:2262
 #, c-format
 msgid "%d keys processed (%d validity counts cleared)\n"
 msgstr "s'han processat %d claus (s'han netejat %d comptes de validesa)\n"
 
-#: g10/trustdb.c:2321
+#: g10/trustdb.c:2327
 msgid "no ultimately trusted keys found\n"
 msgstr "no s'han trobat claus amb confiança absoluta\n"
 
-#: g10/trustdb.c:2335
+#: g10/trustdb.c:2341
 #, fuzzy, c-format
 msgid "public key of ultimately trusted key %s not found\n"
 msgstr ""
 "no s'ha trobat la clau pública de la clau amb confiança absoluta %08lX\n"
 
-#: g10/trustdb.c:2358
+#: g10/trustdb.c:2364
 #, c-format
 msgid "%d marginal(s) needed, %d complete(s) needed, %s trust model\n"
 msgstr ""
 
-#: g10/trustdb.c:2444
+#: g10/trustdb.c:2450
 #, c-format
 msgid ""
 "depth: %d  valid: %3d  signed: %3d  trust: %d-, %dq, %dn, %dm, %df, %du\n"
 msgstr ""
 
-#: g10/trustdb.c:2519
+#: g10/trustdb.c:2525
 #, fuzzy, c-format
 msgid "unable to update trustdb version record: write failed: %s\n"
 msgstr "registre de confiança %lu, tipus %d: no s'ha pogut escriure: %s\n"

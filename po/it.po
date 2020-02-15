@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnupg\n"
 "Report-Msgid-Bugs-To: translations@gnupg.org\n"
-"POT-Creation-Date: 2016-08-17 15:21+0200\n"
+"POT-Creation-Date: 2018-06-11 10:48+0200\n"
 "PO-Revision-Date: 2014-11-16 16:08+0100\n"
 "Last-Translator: Milo Casagrande <milo@milo.name>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
@@ -3521,7 +3521,7 @@ msgstr "(confidenziale)"
 msgid "created: %s"
 msgstr "creata: %s"
 
-#: g10/keyedit.c:2746 g10/keylist.c:786 g10/keylist.c:880 g10/mainproc.c:999
+#: g10/keyedit.c:2746 g10/keylist.c:786 g10/keylist.c:880 g10/mainproc.c:1003
 #, c-format
 msgid "revoked: %s"
 msgstr "revocata: %s"
@@ -3533,7 +3533,7 @@ msgstr "scaduta: %s"
 
 #: g10/keyedit.c:2750 g10/keyedit.c:2801 g10/keyedit.c:2862 g10/keyedit.c:2877
 #: g10/keylist.c:196 g10/keylist.c:763 g10/keylist.c:798 g10/keylist.c:892
-#: g10/keylist.c:913 g10/keyserver.c:532 g10/mainproc.c:1005
+#: g10/keylist.c:913 g10/keyserver.c:532 g10/mainproc.c:1009
 #, c-format
 msgid "expires: %s"
 msgstr "scadenza: %s"
@@ -3570,12 +3570,12 @@ msgstr ""
 "finché non si riavvia il programma.\n"
 
 #: g10/keyedit.c:2894 g10/keyedit.c:3287 g10/keyserver.c:536
-#: g10/mainproc.c:1846 g10/trustdb.c:1243 g10/trustdb.c:1763
+#: g10/mainproc.c:1850 g10/trustdb.c:1243 g10/trustdb.c:1763
 msgid "revoked"
 msgstr "revocata"
 
 #: g10/keyedit.c:2896 g10/keyedit.c:3289 g10/keyserver.c:540
-#: g10/mainproc.c:1848 g10/trustdb.c:552 g10/trustdb.c:1765
+#: g10/mainproc.c:1852 g10/trustdb.c:552 g10/trustdb.c:1765
 msgid "expired"
 msgstr "scaduta"
 
@@ -4725,131 +4725,131 @@ msgstr "de-cifratura non riuscita: %s\n"
 msgid "NOTE: sender requested \"for-your-eyes-only\"\n"
 msgstr "Nota: il mittente ha fatto richiesta di \"riservatezza\"\n"
 
-#: g10/mainproc.c:641
+#: g10/mainproc.c:643
 #, c-format
 msgid "original file name='%.*s'\n"
 msgstr "nome del file originale=\"%.*s\"\n"
 
-#: g10/mainproc.c:726
+#: g10/mainproc.c:730
 msgid "WARNING: multiple plaintexts seen\n"
 msgstr "ATTENZIONE: rilevate molte parti di testo in chiaro\n"
 
-#: g10/mainproc.c:852
+#: g10/mainproc.c:856
 msgid "standalone revocation - use \"gpg --import\" to apply\n"
 msgstr "revoca solitaria - usare \"gpg --import\" per applicarla\n"
 
-#: g10/mainproc.c:1200
+#: g10/mainproc.c:1204
 msgid "no signature found\n"
 msgstr "nessuna firma trovata\n"
 
-#: g10/mainproc.c:1471
+#: g10/mainproc.c:1475
 msgid "signature verification suppressed\n"
 msgstr "verifica della firma soppressa\n"
 
-#: g10/mainproc.c:1580
+#: g10/mainproc.c:1584
 msgid "can't handle this ambiguous signature data\n"
 msgstr "impossibile gestire i dati ambigui di questa firma\n"
 
-#: g10/mainproc.c:1591
+#: g10/mainproc.c:1595
 #, c-format
 msgid "Signature made %s\n"
 msgstr "Firma eseguita %s\n"
 
-#: g10/mainproc.c:1592
+#: g10/mainproc.c:1596
 #, c-format
 msgid "               using %s key %s\n"
 msgstr "               con %s chiave %s\n"
 
-#: g10/mainproc.c:1596
+#: g10/mainproc.c:1600
 #, c-format
 msgid "Signature made %s using %s key ID %s\n"
 msgstr "Firma eseguita in data %s usando %s, ID chiave %s\n"
 
-#: g10/mainproc.c:1616
+#: g10/mainproc.c:1620
 msgid "Key available at: "
 msgstr "Chiave disponibile presso: "
 
-#: g10/mainproc.c:1749 g10/mainproc.c:1797
+#: g10/mainproc.c:1753 g10/mainproc.c:1801
 #, c-format
 msgid "BAD signature from \"%s\""
 msgstr "Firma non corretta di \"%s\""
 
-#: g10/mainproc.c:1751 g10/mainproc.c:1799
+#: g10/mainproc.c:1755 g10/mainproc.c:1803
 #, c-format
 msgid "Expired signature from \"%s\""
 msgstr "Firma scaduta da \"%s\""
 
-#: g10/mainproc.c:1753 g10/mainproc.c:1801
+#: g10/mainproc.c:1757 g10/mainproc.c:1805
 #, c-format
 msgid "Good signature from \"%s\""
 msgstr "Firma valida da \"%s\""
 
-#: g10/mainproc.c:1805
+#: g10/mainproc.c:1809
 msgid "[uncertain]"
 msgstr "[incerta]"
 
-#: g10/mainproc.c:1839
+#: g10/mainproc.c:1843
 #, c-format
 msgid "                aka \"%s\""
 msgstr "                conosciuto anche come \"%s\""
 
-#: g10/mainproc.c:1937
+#: g10/mainproc.c:1941
 #, c-format
 msgid "Signature expired %s\n"
 msgstr "Firma scaduta il %s\n"
 
-#: g10/mainproc.c:1942
+#: g10/mainproc.c:1946
 #, c-format
 msgid "Signature expires %s\n"
 msgstr "Questa firma scadrà il %s\n"
 
-#: g10/mainproc.c:1945
+#: g10/mainproc.c:1949
 #, c-format
 msgid "%s signature, digest algorithm %s\n"
 msgstr "Firma %s, algoritmo di digest %s\n"
 
-#: g10/mainproc.c:1946
+#: g10/mainproc.c:1950
 msgid "binary"
 msgstr "binario"
 
-#: g10/mainproc.c:1947
+#: g10/mainproc.c:1951
 msgid "textmode"
 msgstr "modo testo"
 
-#: g10/mainproc.c:1947 g10/trustdb.c:551
+#: g10/mainproc.c:1951 g10/trustdb.c:551
 msgid "unknown"
 msgstr "sconosciuto"
 
-#: g10/mainproc.c:1981
+#: g10/mainproc.c:1985
 #, c-format
 msgid "WARNING: not a detached signature; file '%s' was NOT verified!\n"
 msgstr ""
 "Attenzione: non una firma separata; il file \"%s\" NON è stato verificato.\n"
 
-#: g10/mainproc.c:2005
+#: g10/mainproc.c:2009
 #, c-format
 msgid "Can't check signature: %s\n"
 msgstr "Impossibile controllare la firma: %s\n"
 
-#: g10/mainproc.c:2074 g10/mainproc.c:2090 g10/mainproc.c:2176
+#: g10/mainproc.c:2078 g10/mainproc.c:2094 g10/mainproc.c:2180
 msgid "not a detached signature\n"
 msgstr "non è una firma separata\n"
 
-#: g10/mainproc.c:2117
+#: g10/mainproc.c:2121
 msgid ""
 "WARNING: multiple signatures detected.  Only the first will be checked.\n"
 msgstr "ATTENZIONE: trovate firme multiple, sarà controllata solo la prima.\n"
 
-#: g10/mainproc.c:2125
+#: g10/mainproc.c:2129
 #, c-format
 msgid "standalone signature of class 0x%02x\n"
 msgstr "firma solitaria di classe 0x%02x\n"
 
-#: g10/mainproc.c:2182
+#: g10/mainproc.c:2186
 msgid "old style (PGP 2.x) signature\n"
 msgstr "firma vecchio stile (PGP 2.x)\n"
 
-#: g10/mainproc.c:2192
+#: g10/mainproc.c:2196
 msgid "invalid root packet detected in proc_tree()\n"
 msgstr "individuato un pacchetto radice non valido in proc_tree()\n"
 
@@ -6138,7 +6138,7 @@ msgstr "completa"
 msgid "no need for a trustdb check\n"
 msgstr "non è necessario un controllo del trustdb\n"
 
-#: g10/trustdb.c:603 g10/trustdb.c:2513
+#: g10/trustdb.c:603 g10/trustdb.c:2519
 #, c-format
 msgid "next trustdb check due at %s\n"
 msgstr "il prossimo controllo del trustdb sarà eseguito il %s\n"
@@ -6169,26 +6169,26 @@ msgstr "eseguire un --check-trustdb\n"
 msgid "checking the trustdb\n"
 msgstr "controllo del trustdb\n"
 
-#: g10/trustdb.c:2256
+#: g10/trustdb.c:2262
 #, c-format
 msgid "%d keys processed (%d validity counts cleared)\n"
 msgstr "%d chiavi analizzate (%d conteggi di validità azzerati)\n"
 
-#: g10/trustdb.c:2321
+#: g10/trustdb.c:2327
 msgid "no ultimately trusted keys found\n"
 msgstr "non è stata trovata alcuna chiave completamente affidabile\n"
 
-#: g10/trustdb.c:2335
+#: g10/trustdb.c:2341
 #, c-format
 msgid "public key of ultimately trusted key %s not found\n"
 msgstr "chiave pubblica della chiave completamente affidabile %s non trovata\n"
 
-#: g10/trustdb.c:2358
+#: g10/trustdb.c:2364
 #, c-format
 msgid "%d marginal(s) needed, %d complete(s) needed, %s trust model\n"
 msgstr "necessari: %d marginali, %d completi, modello di fiducia %s\n"
 
-#: g10/trustdb.c:2444
+#: g10/trustdb.c:2450
 #, c-format
 msgid ""
 "depth: %d  valid: %3d  signed: %3d  trust: %d-, %dq, %dn, %dm, %df, %du\n"
@@ -6196,7 +6196,7 @@ msgstr ""
 "livello: %d  valido: %3d  firmato: %3d  fiducia: %d-, %dq, %dn, %dm, %df, "
 "%du\n"
 
-#: g10/trustdb.c:2519
+#: g10/trustdb.c:2525
 #, c-format
 msgid "unable to update trustdb version record: write failed: %s\n"
 msgstr ""

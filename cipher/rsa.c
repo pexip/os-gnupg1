@@ -29,6 +29,7 @@
 #include <string.h>
 #include "util.h"
 #include "mpi.h"
+#include "mpi-internal.h"
 #include "cipher.h"
 #include "rsa.h"
 
@@ -303,6 +304,9 @@ secret(MPI output, MPI input, RSA_secret_key *skey )
 #if 0
     mpi_powm( output, input, skey->d, skey->n );
 #else
+    MPI D_blind;
+    MPI rr;
+    unsigned int rr_nbits;
     int nlimbs = mpi_get_nlimbs (skey->n)+1;
     MPI m1   = mpi_alloc_secure (nlimbs);
     MPI m2   = mpi_alloc_secure (nlimbs);
@@ -325,14 +329,43 @@ secret(MPI output, MPI input, RSA_secret_key *skey )
 # endif /* USE_BLINDING */
 
     /* RSA secret operation:  */
-    /* m1 = c ^ (d mod (p-1)) mod p */
+    D_blind = mpi_alloc_secure (nlimbs);
+
+    rr_nbits = mpi_get_nbits (skey->p) / 4;
+    if (rr_nbits < 96)
+      rr_nbits = 96;
+    rr = mpi_alloc_secure ( (rr_nbits + BITS_PER_MPI_LIMB-1)/BITS_PER_MPI_LIMB );
+
+    /* d_blind = (d mod (p-1)) + (p-1) * r            */
+    /* m1 = c ^ d_blind mod p */
+    randomize_mpi (rr, rr_nbits, 0);
+    mpi_set_highbit (rr, rr_nbits - 1);
     mpi_sub_ui( h, skey->p, 1  );
+    mpi_mul ( D_blind, h, rr );
+    mpi_free ( rr );
     mpi_fdiv_r( h, skey->d, h );
-    mpi_powm( m1, input, h, skey->p );
-    /* m2 = c ^ (d mod (q-1)) mod q */
+    mpi_add ( D_blind, D_blind, h );
+    mpi_free ( h );
+    mpi_powm ( m1, input, D_blind, skey->p );
+
+    h = mpi_alloc_secure (nlimbs);
+    rr = mpi_alloc_secure ( (rr_nbits + BITS_PER_MPI_LIMB-1)/BITS_PER_MPI_LIMB );
+
+    /* d_blind = (d mod (q-1)) + (q-1) * r            */
+    /* m2 = c ^ d_blind mod q */
+    randomize_mpi (rr, rr_nbits, 0);
+    mpi_set_highbit (rr, rr_nbits - 1);
     mpi_sub_ui( h, skey->q, 1  );
+    mpi_mul ( D_blind, h, rr );
+    mpi_free ( rr );
     mpi_fdiv_r( h, skey->d, h );
-    mpi_powm( m2, input, h, skey->q );
+    mpi_add ( D_blind, D_blind, h );
+    mpi_free ( h );
+    mpi_powm ( m2, input, D_blind, skey->q );
+
+    mpi_free ( D_blind );
+    h = mpi_alloc_secure (nlimbs);
+
     /* h = u * ( m2 - m1 ) mod q */
     mpi_sub( h, m2, m1 );
     if ( mpi_is_neg( h ) )

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnupg-1.3.92\n"
 "Report-Msgid-Bugs-To: translations@gnupg.org\n"
-"POT-Creation-Date: 2016-08-17 15:21+0200\n"
+"POT-Creation-Date: 2018-06-11 10:48+0200\n"
 "PO-Revision-Date: 2012-08-24 17:20+0200\n"
 "Last-Translator: Roman Pavlik <rp@tns.cz>\n"
 "Language-Team: Czech <translations.cs@gnupg.cz>\n"
@@ -3494,7 +3494,7 @@ msgstr "(citlivá informace)"
 msgid "created: %s"
 msgstr "vytvořen: %s"
 
-#: g10/keyedit.c:2746 g10/keylist.c:786 g10/keylist.c:880 g10/mainproc.c:999
+#: g10/keyedit.c:2746 g10/keylist.c:786 g10/keylist.c:880 g10/mainproc.c:1003
 #, c-format
 msgid "revoked: %s"
 msgstr "revokován: %s"
@@ -3506,7 +3506,7 @@ msgstr "platnost skončila: %s"
 
 #: g10/keyedit.c:2750 g10/keyedit.c:2801 g10/keyedit.c:2862 g10/keyedit.c:2877
 #: g10/keylist.c:196 g10/keylist.c:763 g10/keylist.c:798 g10/keylist.c:892
-#: g10/keylist.c:913 g10/keyserver.c:532 g10/mainproc.c:1005
+#: g10/keylist.c:913 g10/keyserver.c:532 g10/mainproc.c:1009
 #, c-format
 msgid "expires: %s"
 msgstr "platnost skončí: %s"
@@ -3543,12 +3543,12 @@ msgstr ""
 "být nutně správné, dokud znova nespustíte program.\n"
 
 #: g10/keyedit.c:2894 g10/keyedit.c:3287 g10/keyserver.c:536
-#: g10/mainproc.c:1846 g10/trustdb.c:1243 g10/trustdb.c:1763
+#: g10/mainproc.c:1850 g10/trustdb.c:1243 g10/trustdb.c:1763
 msgid "revoked"
 msgstr "revokován"
 
 #: g10/keyedit.c:2896 g10/keyedit.c:3289 g10/keyserver.c:540
-#: g10/mainproc.c:1848 g10/trustdb.c:552 g10/trustdb.c:1765
+#: g10/mainproc.c:1852 g10/trustdb.c:552 g10/trustdb.c:1765
 msgid "expired"
 msgstr "platnost skončila"
 
@@ -4679,133 +4679,133 @@ msgstr "dešifrování selhalo: %s\n"
 msgid "NOTE: sender requested \"for-your-eyes-only\"\n"
 msgstr "POZNÁMKA: odesílatel požadoval (\"for-your-eyes-only\")\n"
 
-#: g10/mainproc.c:641
+#: g10/mainproc.c:643
 #, c-format
 msgid "original file name='%.*s'\n"
 msgstr "původní jméno souboru='%.*s'\n"
 
-#: g10/mainproc.c:726
+#: g10/mainproc.c:730
 msgid "WARNING: multiple plaintexts seen\n"
 msgstr "VAROVÁNÍ: zachyceno více prostých textů\n"
 
-#: g10/mainproc.c:852
+#: g10/mainproc.c:856
 msgid "standalone revocation - use \"gpg --import\" to apply\n"
 msgstr ""
 "samostatný revokační certifikát -  použijte \"gpg --import\", chcete-li jej "
 "užít\n"
 
-#: g10/mainproc.c:1200
+#: g10/mainproc.c:1204
 msgid "no signature found\n"
 msgstr "nenalezen žádný podpis\n"
 
-#: g10/mainproc.c:1471
+#: g10/mainproc.c:1475
 msgid "signature verification suppressed\n"
 msgstr "verifikace podpisu potlačena\n"
 
-#: g10/mainproc.c:1580
+#: g10/mainproc.c:1584
 msgid "can't handle this ambiguous signature data\n"
 msgstr "nelze zpracovat tyto nejednoznačné podpisové data\n"
 
-#: g10/mainproc.c:1591
+#: g10/mainproc.c:1595
 #, c-format
 msgid "Signature made %s\n"
 msgstr "Podpis vytvořen %s\n"
 
-#: g10/mainproc.c:1592
+#: g10/mainproc.c:1596
 #, c-format
 msgid "               using %s key %s\n"
 msgstr "               použití %s klíče %s\n"
 
 # Scripte scannen lt. dl1bke auf "ID (0-9A-F)+" deswegen muß "ID" rein :-(
-#: g10/mainproc.c:1596
+#: g10/mainproc.c:1600
 #, c-format
 msgid "Signature made %s using %s key ID %s\n"
 msgstr "Podpis vytvořen %s pomocí klíče %s s ID uživatele %s\n"
 
-#: g10/mainproc.c:1616
+#: g10/mainproc.c:1620
 msgid "Key available at: "
 msgstr "Klíč k dispozici na: "
 
-#: g10/mainproc.c:1749 g10/mainproc.c:1797
+#: g10/mainproc.c:1753 g10/mainproc.c:1801
 #, c-format
 msgid "BAD signature from \"%s\""
 msgstr "ŠPATNÝ podpis od \"%s\""
 
-#: g10/mainproc.c:1751 g10/mainproc.c:1799
+#: g10/mainproc.c:1755 g10/mainproc.c:1803
 #, c-format
 msgid "Expired signature from \"%s\""
 msgstr "Podpis s vypršenou platností od \"%s\""
 
-#: g10/mainproc.c:1753 g10/mainproc.c:1801
+#: g10/mainproc.c:1757 g10/mainproc.c:1805
 #, c-format
 msgid "Good signature from \"%s\""
 msgstr "Dobrý podpis od \"%s\""
 
-#: g10/mainproc.c:1805
+#: g10/mainproc.c:1809
 msgid "[uncertain]"
 msgstr "[nejistý]"
 
-#: g10/mainproc.c:1839
+#: g10/mainproc.c:1843
 #, c-format
 msgid "                aka \"%s\""
 msgstr "                alias \"%s\""
 
-#: g10/mainproc.c:1937
+#: g10/mainproc.c:1941
 #, c-format
 msgid "Signature expired %s\n"
 msgstr "Platnost podpisu skončila %s\n"
 
-#: g10/mainproc.c:1942
+#: g10/mainproc.c:1946
 #, c-format
 msgid "Signature expires %s\n"
 msgstr "Platnost podpisu skončí %s\n"
 
-#: g10/mainproc.c:1945
+#: g10/mainproc.c:1949
 #, c-format
 msgid "%s signature, digest algorithm %s\n"
 msgstr "podpis %s, hashovací algoritmus %s\n"
 
-#: g10/mainproc.c:1946
+#: g10/mainproc.c:1950
 msgid "binary"
 msgstr "binární formát"
 
-#: g10/mainproc.c:1947
+#: g10/mainproc.c:1951
 msgid "textmode"
 msgstr "textový formát"
 
-#: g10/mainproc.c:1947 g10/trustdb.c:551
+#: g10/mainproc.c:1951 g10/trustdb.c:551
 msgid "unknown"
 msgstr "neznámý formát"
 
-#: g10/mainproc.c:1981
+#: g10/mainproc.c:1985
 #, c-format
 msgid "WARNING: not a detached signature; file '%s' was NOT verified!\n"
 msgstr ""
 
-#: g10/mainproc.c:2005
+#: g10/mainproc.c:2009
 #, c-format
 msgid "Can't check signature: %s\n"
 msgstr "Nemohu ověřit podpis: %s\n"
 
-#: g10/mainproc.c:2074 g10/mainproc.c:2090 g10/mainproc.c:2176
+#: g10/mainproc.c:2078 g10/mainproc.c:2094 g10/mainproc.c:2180
 msgid "not a detached signature\n"
 msgstr "toto není podpis oddělený od dokumentu\n"
 
-#: g10/mainproc.c:2117
+#: g10/mainproc.c:2121
 msgid ""
 "WARNING: multiple signatures detected.  Only the first will be checked.\n"
 msgstr "VAROVÁNÍ: detekováno více podpisů. Kontrolován bude pouze první.\n"
 
-#: g10/mainproc.c:2125
+#: g10/mainproc.c:2129
 #, c-format
 msgid "standalone signature of class 0x%02x\n"
 msgstr "samostatný podpis třídy 0x%02x\n"
 
-#: g10/mainproc.c:2182
+#: g10/mainproc.c:2186
 msgid "old style (PGP 2.x) signature\n"
 msgstr "podpis starého typu (PGP 2.x)\n"
 
-#: g10/mainproc.c:2192
+#: g10/mainproc.c:2196
 msgid "invalid root packet detected in proc_tree()\n"
 msgstr "nalezen neplatný kořenový paket v proc_tree()\n"
 
@@ -6068,7 +6068,7 @@ msgstr "absolutní"
 msgid "no need for a trustdb check\n"
 msgstr "není nutné kontrolovat databázi důvěry\n"
 
-#: g10/trustdb.c:603 g10/trustdb.c:2513
+#: g10/trustdb.c:603 g10/trustdb.c:2519
 #, c-format
 msgid "next trustdb check due at %s\n"
 msgstr "další kontrola databáze důvěry v %s\n"
@@ -6096,26 +6096,26 @@ msgstr "prosím proveďte --check-trustdb\n"
 msgid "checking the trustdb\n"
 msgstr "kontroluji databázi důvěry\n"
 
-#: g10/trustdb.c:2256
+#: g10/trustdb.c:2262
 #, c-format
 msgid "%d keys processed (%d validity counts cleared)\n"
 msgstr "zpracováno %d klíčů (%d validit vymazáno)\n"
 
-#: g10/trustdb.c:2321
+#: g10/trustdb.c:2327
 msgid "no ultimately trusted keys found\n"
 msgstr "žádný absolutně důvěryhodný klíč nebyl nalezen\n"
 
-#: g10/trustdb.c:2335
+#: g10/trustdb.c:2341
 #, c-format
 msgid "public key of ultimately trusted key %s not found\n"
 msgstr "veřejný klíč k absolutně důvěryhodnému klíči %s nebyl nalezen\n"
 
-#: g10/trustdb.c:2358
+#: g10/trustdb.c:2364
 #, c-format
 msgid "%d marginal(s) needed, %d complete(s) needed, %s trust model\n"
 msgstr "požadováno %d částečné důvěry a %d úplné důvěry, model %s\n"
 
-#: g10/trustdb.c:2444
+#: g10/trustdb.c:2450
 #, c-format
 msgid ""
 "depth: %d  valid: %3d  signed: %3d  trust: %d-, %dq, %dn, %dm, %df, %du\n"
@@ -6123,7 +6123,7 @@ msgstr ""
 "hloubka: %d  platných: %3d  podepsaných: %3d  důvěra: %d-, %dq, %dn, %dm, "
 "%df, %du\n"
 
-#: g10/trustdb.c:2519
+#: g10/trustdb.c:2525
 #, c-format
 msgid "unable to update trustdb version record: write failed: %s\n"
 msgstr "nelze aktualizovat záznam v databázi důvěry: chyba při zápisu: %s\n"

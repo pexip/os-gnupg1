@@ -204,7 +204,7 @@ read from STDIN.  If only a one argument is given, it is expected to
 be a complete signature.
 
 With more than 1 argument, the first should be a detached signature
-and the remaining files ake up the the signed data. To read the signed
+and the remaining files make up the the signed data. To read the signed
 data from STDIN, use @samp{-} as the second filename.  For security
 reasons a detached signature cannot read the signed material from
 STDIN without denoting it in the above way.
@@ -1894,7 +1894,7 @@ opposite meaning. The options are:
   a formerly deleted key does not automatically gain an ownertrust
   values merely due to import.  On the other hand it is sometimes
   necessary to re-import a trusted set of keys again but keeping
-  already assigned ownertrust values.  This can be achived by using
+  already assigned ownertrust values.  This can be achieved by using
   this option.
 
   @item repair-pks-subkey-bug
@@ -2274,13 +2274,6 @@ Set all useful debugging flags.
 @opindex debug-ccid-driver
 Enable debug output from the included CCID driver for smartcards.
 Note that this option is only available on some system.
-
-@item --faked-system-time @var{epoch}
-@opindex faked-system-time
-This option is only useful for testing; it sets the system time back or
-forth to @var{epoch} which is the number of seconds elapsed since the year
-1970.  Alternatively @var{epoch} may be given as a full ISO time string
-(e.g. "20070924T154812").
 
 @item --enable-progress-filter
 @opindex enable-progress-filter

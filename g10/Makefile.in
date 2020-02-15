@@ -465,6 +465,13 @@ AM_CPPFLAGS = -I$(top_srcdir)/include -I$(top_srcdir)/intl \
 	@LIBUSB_CPPFLAGS@ $(am__append_1)
 needed_libs = ../cipher/libcipher.a ../mpi/libmpi.a ../util/libutil.a
 other_libs = $(LIBICONV) $(DNSLIBS) $(LIBINTL) $(CAPLIBS)
+
+# "make distcheck" runs "gpg --version" which unfortunately may print
+# warnings about unsupported options to stderr which make distcheck
+# rejects.  I am not sure on how to pass the envvar GNUPGHOME to that
+# gpg invocation to make sure that a gpg.conf from gnupg 2 is not
+# used.  The easiest way to avoid that is to not run this extra test.
+AM_INSTALLCHECK_STD_OPTIONS_EXEMPT = gpg$(EXEEXT)
 dist_pkgdata_DATA = options.skel
 @ENABLE_BZIP2_SUPPORT_FALSE@bzip2_source = 
 @ENABLE_BZIP2_SUPPORT_TRUE@bzip2_source = compress-bz2.c
