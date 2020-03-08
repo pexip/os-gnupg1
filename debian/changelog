@@ -1,3 +1,9 @@
+gnupg1 (1.4.23-1pexip1) pexip; urgency=medium
+
+  * Migrate to Buster
+
+ -- Vincent Sanders <vince@pexip.com>  Sun, 08 Mar 2020 20:15:04 +0000
+
 gnupg1 (1.4.23-1) unstable; urgency=medium
 
   * new upstream release
