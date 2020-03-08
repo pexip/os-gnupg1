@@ -7,10 +7,10 @@ Subject: avoid looking for git info during autoreconf
  1 file changed, 2 insertions(+), 5 deletions(-)
 
 diff --git a/configure.ac b/configure.ac
-index 8133537..0179f1d 100644
+index b92440c..6222be6 100644
 --- a/configure.ac
 +++ b/configure.ac
-@@ -32,13 +32,10 @@ m4_define([mym4_version], [1.4.21])
+@@ -32,13 +32,10 @@ m4_define([mym4_version], [1.4.23])
  # the decimalized short revision number, a beta version string and a
  # flag indicating a development version (mym4_isgit).  Note that the
  # m4 processing is done by autoconf and not during the configure run.

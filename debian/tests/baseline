@@ -1,0 +1,71 @@
+#!/bin/bash
+set -e
+# simple smoke test, exercises baseline functionality of gpg1 and gpgv1
+
+# Author: Daniel Kahn Gillmor <dkg@fifthhorseman.net>
+
+# TODO:
+# * network access (keyserver fetches?)
+# * Web of Trust identity verification
+# * symmetric encryption
+# * interaction with gpg-agent?
+
+genkeystatusfile="${AUTOPKGTEST_ARTIFACTS}/gen-key.status"
+gpgvstatusfile="${AUTOPKGTEST_ARTIFACTS}/gpgv.status"
+secretfile="${AUTOPKGTEST_ARTIFACTS}/secret"
+decryptedfile="${AUTOPKGTEST_ARTIFACTS}/decrypted"
+pubkeyfile="${AUTOPKGTEST_ARTIFACTS}/pubkey"
+pass="$( head -c 18 < /dev/urandom | base64 )"
+secret="$( head -c 18 < /dev/urandom | base64 )"
+symmetricpass="$( head -c 18 < /dev/urandom | base64 )"
+
+export GNUPGHOME="${AUTOPKGTEST_ARTIFACTS}/.gnupg"
+
+GPG="gpg1 --batch --no-tty"
+GPGV="gpgv1"
+
+echo Testing key generation...
+
+$GPG --status-fd 3 3> "$genkeystatusfile" \
+     2>&1 \
+     --gen-key <<EOF
+Key-Type: RSA
+Key-Length: 1024
+Subkey-Type: RSA
+Subkey-Length: 1024
+Name-Real: Test User
+Name-Email: test@example.org
+Expire-Date: 0
+Passphrase: $pass
+EOF
+
+fpr="$(awk '/KEY_CREATED/{ print $4 }' < "$genkeystatusfile" )"
+
+$GPG --export "0x$fpr" >"$pubkeyfile"
+
+echo Testing encryption...
+
+printf "%s" "$secret" > "$secretfile"
+$GPG -r "0x$fpr" --encrypt "${secretfile}" 2>&1
+
+echo Testing decryption...
+
+$GPG --passphrase-fd 3 3<<<"$pass" \
+     --output "$decryptedfile" \
+     --decrypt < "${secretfile}.gpg" 2>&1
+
+if [ "$(cat < $decryptedfile)" != "$secret" ]; then
+    printf "Failed: D(E(%s)) produced %s\n" "$secret" "$done" >&2
+    exit 1
+fi
+
+echo Testing signatures...
+
+$GPG --armor --passphrase-fd 3 3<<<"$pass" --detach-sign "$secretfile" 2>&1
+$GPG --verify "${secretfile}.asc" "${secretfile}" 2>&1
+
+echo Testing gpgv...
+
+$GPGV --status-fd 3 3> "$gpgvstatusfile" \
+      --keyring "$pubkeyfile" \
+      "${secretfile}.asc" "${secretfile}" 2>&1

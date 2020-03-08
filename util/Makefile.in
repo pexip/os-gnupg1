@@ -106,8 +106,8 @@ host_triplet = @host@
 @USE_DNS_SRV_TRUE@am__append_5 = srv.c
 subdir = util
 DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am \
-	$(top_srcdir)/scripts/mkinstalldirs isascii.c memrchr.c \
-	strsep.c timegm.c mkdtemp.c $(top_srcdir)/scripts/depcomp
+	$(top_srcdir)/scripts/mkinstalldirs mkdtemp.c isascii.c \
+	strsep.c memrchr.c timegm.c $(top_srcdir)/scripts/depcomp
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/autobuild.m4 \
 	$(top_srcdir)/m4/codeset.m4 $(top_srcdir)/m4/estream.m4 \

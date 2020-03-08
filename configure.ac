@@ -26,7 +26,7 @@ min_automake_version="1.14"
 # (git tag -s gnupg-1.n.m) and run "./autogen.sh --force".  Please
 # bump the version number immediately *after* the release and do
 # another commit and push so that the git magic is able to work.
-m4_define([mym4_version], [1.4.21])
+m4_define([mym4_version], [1.4.23])
 
 # Below is m4 magic to extract and compute the git revision number,
 # the decimalized short revision number, a beta version string and a
@@ -42,7 +42,7 @@ m4_define([mym4_betastring],
 m4_define([mym4_isgit],m4_if(mym4_betastring,[],[no],[yes]))
 m4_define([mym4_full_version],[mym4_version[]mym4_betastring])
 
-AC_INIT([gnupg],[mym4_full_version], [http://bugs.gnupg.org])
+AC_INIT([gnupg],[mym4_full_version], [https://bugs.gnupg.org])
 
 
 development_version=mym4_isgit
@@ -847,12 +847,6 @@ AC_DEFINE_UNQUOTED(PRINTABLE_OS_NAME, "$PRINTABLE_OS_NAME",
 #
 NAME_OF_DEV_RANDOM="/dev/random"
 NAME_OF_DEV_URANDOM="/dev/urandom"
-case "${host}" in
-    *-openbsd*)
-        NAME_OF_DEV_RANDOM="/dev/srandom"
-        NAME_OF_DEV_URANDOM="/dev/urandom"
-        ;;
-esac
 AC_DEFINE_UNQUOTED(NAME_OF_DEV_RANDOM, "$NAME_OF_DEV_RANDOM",
                    [defined to the name of the strong random device])
 AC_DEFINE_UNQUOTED(NAME_OF_DEV_URANDOM, "$NAME_OF_DEV_URANDOM",
